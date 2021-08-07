@@ -11,10 +11,25 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#flex">display</a></li>
+            <li><a href="#wrap">flex-wrap</a></li>
+            <li><a href="#flex-direction">flex-direction</a></li>
+            <li><a href="#justify-content">justify-content</a></li>
+            <li><a href="#align-items">align-items</a></li>
+            <li><a href="#align-content">align-content</a></li>
+            <li><a href="#order">order</a></li>
+            <li><a href="#flex-grow">flex-grow</a></li>
+            <li><a href="#flex-shrink">flex-shrink</a></li>
+            <li><a href="#align-self">align-self</a></li>
+            <li><a href="#flex-basis">flex-basis</a></li>
+        </ul>
+    </nav>
     <main>
         <h1>Шпаргалка по FLEXBOX</h1>
 
-        <section>
+        <section id="flex">
             <h2>блок flex и flex элементы</h2>
             <div class="flex">
                 <div class="block">elem</div>
@@ -26,7 +41,7 @@
 
         <hr>
 
-        <section>
+        <section id="wrap">
             <h2>flex-wrap: <b>wrap</b>, nowrap (по-умолчанию)</h2>
             <div class="flex flex-wrap">
                 <div class="block">elem 1</div>
@@ -42,7 +57,7 @@
 
         <hr>
 
-        <section>
+        <section id="flex-direction">
             <h2>flex-direction: row (по-умолчанию), <b>row-reverse</b>, column, column-reverse</h2>
             <div class="flex flex-direction-row-reverse">
                 <div class="block">elem 1</div>
@@ -55,7 +70,7 @@
 
         <hr>
 
-        <section>
+        <section id="justify-content">
             <h2>justify-content: <b>center</b>, flex-start (по-умолчанию), flex-end, space-between, space-around</h2>
             <div class="flex justify-content-center">
                 <div class="block">elem 1</div>
@@ -67,7 +82,7 @@
 
         <hr>
 
-        <section>
+        <section id="align-items">
             <h2>align-items: <b>center</b>, flex-start (по-умолчанию), flex-end, baseline</h2>
             <div class="flex align-items-center h300">
                 <div class="block">elem 1</div>
@@ -79,7 +94,7 @@
 
         <hr>
 
-        <section>
+        <section id="align-content">
             <h2>align-content: stretch (по-умолчанию), center, flex-start, flex-end, space-between, space-around</h2>
             <div class="flex flex-wrap align-content-flex-end h300">
                 <div class="block">elem 1</div>
@@ -99,7 +114,7 @@
 
         <hr>
 
-        <section>
+        <section id="order">
             <h2>order: целое число (0 по умолчанию)</h2>
             <div class="flex">
                 <div class="block order-3">elem 1 <br>(oreder 3)</div>
@@ -111,7 +126,7 @@
 
         <hr>
 
-        <section>
+        <section id="flex-grow">
             <h2>flex-grow: целое число</h2>
             <div class="flex">
                 <div class="block flex-grow-1">elem 1 <br>(flex-grow: 1)</div>
@@ -123,22 +138,27 @@
 
         <hr>
 
-        <section>
+        <section id="flex-shrink">
             <h2>flex-shrink: целое число</h2>
             <div class="flex">
                 <div class="block w-auto flex-shrink-1">Далеко-далеко за словесными, горами в стране гласных и согласных
                     живут рыбные тексты. Прямо рыбного жизни, ее напоивший взобравшись ручеек маленькая повстречался
                     вопрос? <br>(flex-shrink: 1)</div>
-                <div class="block w-auto flex-shrink-3">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Великий, от всех единственное! Она, деревни. О послушавшись дороге страна образ! <br>(flex-shrink: 3)</div>
-                <div class="block w-auto">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Если, парадигматическая. По всей ему имени назад алфавит силуэт эта сих.</div>
-                <div class="block w-auto flex-shrink-4">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Свой вскоре большой деревни лучше что продолжил пустился взгляд маленькая. <br>(flex-shrink: 4)</div>
+                <div class="block w-auto flex-shrink-3">Далеко-далеко за словесными горами в стране, гласных и согласных
+                    живут рыбные тексты. Великий, от всех единственное! Она, деревни. О послушавшись дороге страна
+                    образ! <br>(flex-shrink: 3)</div>
+                <div class="block w-auto">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные
+                    тексты. Если, парадигматическая. По всей ему имени назад алфавит силуэт эта сих.</div>
+                <div class="block w-auto flex-shrink-4">Далеко-далеко за словесными горами в стране гласных и согласных
+                    живут, рыбные тексты. Свой вскоре большой деревни лучше что продолжил пустился взгляд маленькая.
+                    <br>(flex-shrink: 4)</div>
             </div>
             <p class="text-center">Ноль растянет елемент на максимальную ширину контента</p>
         </section>
 
         <hr>
 
-        <section>
+        <section id="align-self">
             <h2>align-self: stretch (по-умолчанию), center, flex-start, flex-end, baseline</h2>
             <div class="flex h300">
                 <div class="block align-self-center">elem 1 <br>(align-self: center)</div>
@@ -150,19 +170,20 @@
 
         <hr>
 
-        <section>
+        <section id="flex-basis">
             <h2>flex-basis: &lt;length&gt; | auto;</h2>
             <div class="flex">
-                <div class="block flex-basis-200px">Далеко-далеко за, словесными горами в стране гласных и согласных живут
+                <div class="block flex-basis-200px">Далеко-далеко за, словесными горами в стране гласных и согласных
+                    живут
                     рыбные тексты. <br>(flex-basis: 200px)</div>
-                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.
+                </div>
                 <div class="block flex-basis-400px">Далеко-далеко за, словесными горами в стране гласных и согласных
                     живут рыбные тексты. <br>(flex-basis: 400px)</div>
-                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.
+                </div>
             </div>
         </section>
-
-        <hr>
 
     </main>
 </body>
