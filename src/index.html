@@ -1,52 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<main>
-  <h1>Шпаргалка по FLEXBOX</h1>
+    <main>
+        <h1>Шпаргалка по FLEXBOX</h1>
 
-  <section>
-      <h2>блок flex и flex элементы</h2>
-      <div class="flex">
-          <div class="block">elem</div>
-          <div class="block">elem</div>
-          <div class="block">elem</div>
-          <div class="block">elem</div>
-      </div>
-  </section>
+        <section>
+            <h2>блок flex и flex элементы</h2>
+            <div class="flex">
+                <div class="block">elem</div>
+                <div class="block">elem</div>
+                <div class="block">elem</div>
+                <div class="block">elem</div>
+            </div>
+        </section>
 
-  <hr>
+        <hr>
 
-  <section>
-      <h2>flex-direction row (по-умолчанию), <b>row-reverse</b>, column, column-reverse</h2>
-      <div class="flex flex-direction-row-reverse">
-          <div class="block">elem 1</div>
-          <div class="block">elem 2</div>
-          <div class="block">elem 3</div>
-          <div class="block">elem 4</div>
-      </div>
+        <section>
+            <h2>flex-wrap: <b>wrap</b>, nowrap (по-умолчанию)</h2>
+            <div class="flex flex-wrap">
+                <div class="block">elem 1</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block">elem 4</div>
+                <div class="block">elem 5</div>
+                <div class="block">elem 6</div>
+                <div class="block">elem 7</div>
+                <div class="block">elem 8</div>
+            </div>
+        </section>
 
-  </section>
+        <hr>
 
-  <hr>
+        <section>
+            <h2>flex-direction: row (по-умолчанию), <b>row-reverse</b>, column, column-reverse</h2>
+            <div class="flex flex-direction-row-reverse">
+                <div class="block">elem 1</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block">elem 4</div>
+            </div>
 
-  <section>
-    <h2>justify-content: <b>center</b>, flex-start (по-умолчанию), flex-end, space-between, space-around</h2>
-    <div class="flex justify-content-center">
-        <div class="block">elem 1</div>
-        <div class="block">elem 2</div>
-        <div class="block">elem 3</div>
-        <div class="block">elem 4</div>
-    </div>
-  </section>
+        </section>
 
-</main>
+        <hr>
+
+        <section>
+            <h2>justify-content: <b>center</b>, flex-start (по-умолчанию), flex-end, space-between, space-around</h2>
+            <div class="flex justify-content-center">
+                <div class="block">elem 1</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block">elem 4</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>align-items: <b>center</b>, flex-start (по-умолчанию), flex-end, baseline</h2>
+            <div class="flex align-items-center h300">
+                <div class="block">elem 1</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block">elem 4</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>align-content: stretch (по-умолчанию), center, flex-start, flex-end, space-between, space-around</h2>
+            <div class="flex flex-wrap align-content-flex-end h300">
+                <div class="block">elem 1</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block">elem 4</div>
+                <div class="block">elem 5</div>
+                <div class="block">elem 6</div>
+                <div class="block">elem 7</div>
+                <div class="block">elem 8</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <h1>Свойства элементов</h1>
+
+        <hr>
+
+        <section>
+            <h2>order: целое число (0 по умолчанию)</h2>
+            <div class="flex">
+                <div class="block order-3">elem 1 <br>(oreder 3)</div>
+                <div class="block order-1">elem 2 <br>(order 1)</div>
+                <div class="block">elem 3</div>
+                <div class="block order-0">elem 4 <br>(order 0)</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>flex-grow: целое число</h2>
+            <div class="flex">
+                <div class="block flex-grow-1">elem 1 <br>(flex-grow: 1)</div>
+                <div class="block flex-grow-3">elem 2 <br>(flex-grow: 3)</div>
+                <div class="block">elem 3</div>
+                <div class="block flex-grow-0">elem 4 <br>(flex-grow: 0)</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>flex-shrink: целое число</h2>
+            <div class="flex">
+                <div class="block w-auto flex-shrink-1">Далеко-далеко за словесными, горами в стране гласных и согласных
+                    живут рыбные тексты. Прямо рыбного жизни, ее напоивший взобравшись ручеек маленькая повстречался
+                    вопрос? <br>(flex-shrink: 1)</div>
+                <div class="block w-auto flex-shrink-3">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Великий, от всех единственное! Она, деревни. О послушавшись дороге страна образ! <br>(flex-shrink: 3)</div>
+                <div class="block w-auto">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Если, парадигматическая. По всей ему имени назад алфавит силуэт эта сих.</div>
+                <div class="block w-auto flex-shrink-4">Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Свой вскоре большой деревни лучше что продолжил пустился взгляд маленькая. <br>(flex-shrink: 4)</div>
+            </div>
+            <p class="text-center">Ноль растянет елемент на максимальную ширину контента</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>align-self: stretch (по-умолчанию), center, flex-start, flex-end, baseline</h2>
+            <div class="flex h300">
+                <div class="block align-self-center">elem 1 <br>(align-self: center)</div>
+                <div class="block">elem 2</div>
+                <div class="block">elem 3</div>
+                <div class="block align-self-flex-start">elem 4 <br>(align-self: <br>flex-start)</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>flex-basis: &lt;length&gt; | auto;</h2>
+            <div class="flex">
+                <div class="block flex-basis-200px">Далеко-далеко за, словесными горами в стране гласных и согласных живут
+                    рыбные тексты. <br>(flex-basis: 200px)</div>
+                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+                <div class="block flex-basis-400px">Далеко-далеко за, словесными горами в стране гласных и согласных
+                    живут рыбные тексты. <br>(flex-basis: 400px)</div>
+                <div class="block">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</div>
+            </div>
+        </section>
+
+        <hr>
+
+    </main>
 </body>
+
 </html>
